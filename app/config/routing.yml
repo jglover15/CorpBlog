@@ -1,0 +1,4 @@
+corp_blog:
+    resource: "@CorpBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+

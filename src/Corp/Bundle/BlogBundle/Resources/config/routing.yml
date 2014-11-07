@@ -1,0 +1,11 @@
+corp_blog_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: CorpBlogBundle:Default:index }
+
+corp_blog_entry:
+    path:     /entry/{id}
+    defaults: { _controller: CorpBlogBundle:Default:entry }
+
+corp_test_entry:
+    path:     /test/{id}
+    defaults: { _controller: CorpBlogBundle:Default:test }
