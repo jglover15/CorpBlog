@@ -126,5 +126,14 @@ class BlogEntry
         return $this->updateDate;
     }
 
-
+    /**
+     * Return a unique representation of the content at a given point in time
+     * Format: <entityType>_<id>_<updateDate>
+     *
+     * @link http://en.wikipedia.org/wiki/HTTP_ETag
+     */
+    public function getETag()
+    {
+        return 'BlogEntry' . '_' . $this->getId() . '_' . $this->getUpdateDate()->format('c');
+    }
 }

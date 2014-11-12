@@ -2,10 +2,30 @@ corp_blog_homepage:
     path:     /hello/{name}
     defaults: { _controller: CorpBlogBundle:Default:index }
 
-corp_blog_entry:
-    path:     /entry/{id}
-    defaults: { _controller: CorpBlogBundle:Default:entry }
+corp_default_entry:
+    path:     /default/{id}
+    defaults: { _controller: CorpBlogBundle:Default:default }
 
-corp_test_entry:
-    path:     /test/{id}
-    defaults: { _controller: CorpBlogBundle:Default:test }
+corp_manual_entry:
+    path:     /manual/{id}
+    defaults: { _controller: CorpBlogBundle:Default:manual }
+
+corp_manual_one_entry:
+    path:     /private/{id}
+    defaults: { _controller: CorpBlogBundle:Default:private }
+
+corp_manual_no_entry:
+    path:     /no/{id}
+    defaults: { _controller: CorpBlogBundle:Default:no }
+
+corp_manual_nostore_entry:
+    path:     /nostore/{id}
+    defaults: { _controller: CorpBlogBundle:Default:nostore }
+
+corp_manual_tag_entry:
+    path:     /tag/{id}
+    defaults: { _controller: CorpBlogBundle:Default:tag }
+
+corp_manual_tag_annotation_entry:
+    path:     /tagannotation/{id}
+    defaults: { _controller: CorpBlogBundle:Default:tagannotation }
