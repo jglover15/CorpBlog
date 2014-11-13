@@ -97,7 +97,7 @@ class DefaultController extends Controller
         $response->setETag($entry->getETag());
         $response->setLastModified($entry->getUpdateDate());
 
-        $response->setMaxAge(300);
+        // $response->setMaxAge(10);
 
         // Set response as public. Otherwise it will be private by default.
         $response->setPublic();
@@ -130,7 +130,6 @@ class DefaultController extends Controller
      *
      * @Cache(
      *      public = true,
-     *      maxage = "300",
      *      lastModified = "entry.getUpdateDate()",
      *      ETag = "entry.getETag()"
      * )
